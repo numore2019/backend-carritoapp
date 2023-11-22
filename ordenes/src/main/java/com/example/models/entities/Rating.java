@@ -25,12 +25,16 @@ public class Rating implements Serializable{
 		super();
 	}
     
-	public Rating(double rate, int count) {
+    
+	public Rating(int id, double rate, int count) {
 		super();
+		this.id = id;
 		this.rate = rate;
 		this.count = count;
 	}
-    
+
+
+
 	public double getRate() {
 		return rate;
 	}
@@ -44,5 +48,14 @@ public class Rating implements Serializable{
 	public void setCount(int count) {
 		this.count = count;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
     
+	
 }
